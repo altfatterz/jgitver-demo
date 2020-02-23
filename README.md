@@ -1,3 +1,5 @@
+![Java CI](https://github.com/altfatterz/jgitver-demo/workflows/Java%20CI/badge.svg)
+
 Default image name:
 
 ```
