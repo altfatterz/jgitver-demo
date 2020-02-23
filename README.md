@@ -19,3 +19,8 @@ https://hub.docker.com/r/cloudfoundry/cnb
 ```
 Version: 0.0.0-NOT_A_GIT_REPOSITORY
 ```
+
+
+```
+./gradlew bootBuildImage
+```
