@@ -30,7 +30,9 @@ jobs:
         run: ./gradlew build
 
       - name: Calculate version
-        run: ./gradlew version | grep Version | awk '{ print $2 }'
+        run: |
+          ./gradlew version | grep Version | awk '{ print $2 }'
+          git describe --abbrev=0
 
       - name: Build and Upload Docker image
         run: |
