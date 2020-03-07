@@ -41,6 +41,7 @@ $ docker tag IMAGE_ID docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME
 $ docker push docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME:VERSION
 ```
 
+
 ```
 $ ./gradlew version
 > Task :version
