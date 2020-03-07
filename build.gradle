@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.3.0.M2'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
-    id 'com.google.cloud.tools.jib' version '2.0.0'
+    id 'com.google.cloud.tools.jib' version '2.1.0'
     id 'java'
 }
 
