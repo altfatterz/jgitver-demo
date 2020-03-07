@@ -36,7 +36,7 @@ jobs:
 
       - name: Calculate version
         run: |
-          echo "::set-output name=version::$(./gradlew version | grep Version | awk '{ print $2 })"
+          echo "::set-output name=version::$(./gradlew version | grep Version | awk '{ print $2 }')"
           ./gradlew version | grep Version | awk '{ print $2 }'
         id: get_version_step
 
