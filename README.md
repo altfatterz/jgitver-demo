@@ -55,7 +55,5 @@ Resources
 3. https://github.com/smyrick/kotlin-extensions/blob/master/.github/workflows/publish-release.yml
 4. https://zoltanaltfatter.com/2019/08/16/dockerizing-spring-boot-apps-with-jib/
 5. https://medium.com/curiosity-driven-development/how-to-dockerize-a-spring-boot-app-with-googles-jib-53dcac56a2e1
+6. .https://docs.spring.io/spring-boot/docs/2.3.x/reference/htmlsingle/#howto-build
 
-1. Create with Jib
-2. Version the docker image with jgitver
-3. Publish the docker image to GitHub Packages

@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
     id 'com.google.cloud.tools.jib' version '2.1.0'
+    id "com.gorylenko.gradle-git-properties" version "2.2.0"
     id 'java'
 }
 
@@ -24,6 +25,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+
+// generating build information containing the coordinates, name, and version of the project.
+springBoot {
+    buildInfo()
 }
 
 jib {
