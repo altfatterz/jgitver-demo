@@ -30,12 +30,9 @@ jobs:
         run: ./gradlew build
         
       - name: Build and Upload Docker image
-        env:
-          MY_VAR : Hello
         run: |
           echo ${{ secrets.GITHUB_TOKEN }}
-          echo $MY_VAR
           ./gradlew jib \
-            -Djib.to.image=docker.pkg.github.com/altfatterz/jgitver-demo/jgitver-demo:latest \
+            -Djib.to.image=docker.pkg.github.com/altfatterz/jgitver-demo/jgitver-demo \
             -Djib.to.auth.username=altfatterz \
             -Djib.to.auth.password=${{ secrets.GITHUB_TOKEN }}
