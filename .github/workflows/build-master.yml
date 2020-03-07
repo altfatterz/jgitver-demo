@@ -36,13 +36,13 @@ jobs:
 
       - name: Calculate version
         run: |
-          echo "::set-output name=action_fruit::strawberry"
+          echo "::set-output name=version::$(./gradlew version | grep Version | awk '{ print $2 })"
           ./gradlew version | grep Version | awk '{ print $2 }'
         id: get_version_step
 
       - name: Build and Upload Docker image
         run: |
-          echo "Action Fruit: ${{ steps.get_version_step.outputs.action_fruit }}"
+          echo "Version: ${{ steps.get_version_step.outputs.version }}"
           echo ${{ secrets.GITHUB_TOKEN }}
           ./gradlew jib \
             -Djib.to.image=docker.pkg.github.com/altfatterz/jgitver-demo/jgitver-demo \
