@@ -47,8 +47,6 @@ Version: 0.0.0-12
 ```
 
 
-
-
 Resources
 1. https://martinheinz.dev/blog/6
 2. https://medium.com/@shanemyrick/publishing-to-github-packages-with-gradle-and-github-actions-4ad842634c4e
