@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout latest code
         uses: actions/checkout@v2
+        - run: |
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
@@ -32,7 +34,6 @@ jobs:
       - name: Calculate version
         run: |
           ./gradlew version | grep Version | awk '{ print $2 }'
-          git describe --abbrev=0
 
       - name: Build and Upload Docker image
         run: |
