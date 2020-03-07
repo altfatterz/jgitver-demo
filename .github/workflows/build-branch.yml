@@ -1,4 +1,4 @@
-name: Build branch
+name: Build any branch except master
 
 on:
   push:
@@ -13,6 +13,12 @@ jobs:
       - name: Test
         run: |
           echo "First job first step"
+          echo "Debug message"
+          echo "::debug file=README.md,line=1::Entered octocatAddition method"
+          echo "Warning message"
+          echo "::warning file=README.md,line=1,col=5::Missing semicolon"
+          echo "Error message"
+          echo "::error file=README.md,line=10,col=15::Something went wrong"
 
   secon-job:
     runs-on: ubuntu-latest
