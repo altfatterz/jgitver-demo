@@ -1,0 +1,9 @@
+info:
+  app:
+    name: ${spring.application.name}
+    description: jgitver calculates a project semver compatible version from a git repository
+
+spring:
+  application:
+    name: jgitver-demo
+

@@ -40,6 +40,14 @@ $ docker tag IMAGE_ID docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME
 $ docker push docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME:VERSION
 ```
 
+```
+$ ./gradlew version
+> Task :version
+Version: 0.0.0-12
+```
+
+
+
 
 Resources
 1. https://martinheinz.dev/blog/6
