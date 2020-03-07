@@ -20,6 +20,7 @@ https://hub.docker.com/r/cloudfoundry/cnb
 ./gradlew version
 ```
 
+
 ```
 Version: 0.0.0-NOT_A_GIT_REPOSITORY
 ```
