@@ -1,34 +1,34 @@
 ![Java CI](https://github.com/altfatterz/jgitver-demo/workflows/Java%20CI/badge.svg)
 
-This is work in progress
-
-Default image name:
-
-```
-docker.io/library/jgitver-demo:0.0.1-SNAPSHOT
+```bash
+$ http :8080/actuator/info
 ```
 
-CNB (Cloud Native Buildpack)
-- is turning the source code into a runnable OCI image.
-
-Buildpacks provide a higher-level abstraction for building apps compared to Dockerfiles
-
-https://hub.docker.com/r/cloudfoundry/cnb
-
-
+```json
+{
+    "app": {
+        "description": "jgitver calculates a project semver compatible version from a git repository",
+        "name": "jgitver-demo"
+    },
+    "build": {
+        "artifact": "jgitver-demo",
+        "group": "com.example",
+        "name": "jgitver-demo",
+        "time": "2020-04-09T20:38:44.439Z",
+        "version": "0.0.2-1"
+    },
+    "git": {
+        "branch": "master",
+        "commit": {
+            "id": "de5248a",
+            "time": "2020-03-07T21:46:14Z"
+        }
+    }
+}
 ```
-./gradlew version
-```
 
 
-```
-Version: 0.0.0-NOT_A_GIT_REPOSITORY
-```
 
-
-```
-./gradlew bootBuildImage
-```
 
 GitHub Registry:
 
