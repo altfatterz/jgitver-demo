@@ -1,5 +1,8 @@
 ![Java CI](https://github.com/altfatterz/jgitver-demo/workflows/Java%20CI/badge.svg)
 
+Example code for blog post: [https://zoltanaltfatter.com/2020/04/10/semantic-versioning-with-jgitver/](https://zoltanaltfatter.com/2020/04/10/semantic-versioning-with-jgitver/) 
+
+
 ```bash
 $ http :8080/actuator/info
 ```
@@ -30,7 +33,7 @@ $ http :8080/actuator/info
 
 
 
-GitHub Registry:
+GitHub Registry (Private):
 
 1. Create a GitHub Personal Access token
 2. Save it in ~/GH_TOKEN.txt
@@ -40,20 +43,3 @@ $ cat ~/GH_TOKEN.txt | docker login -u altfatterz docker.pkg.github.com --passwo
 $ docker tag IMAGE_ID docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME:VERSION
 $ docker push docker.pkg.github.com/altfatterz/two-step-login/IMAGE_NAME:VERSION
 ```
-
-
-```
-$ ./gradlew version
-> Task :version
-Version: 0.0.0-12
-```
-
-
-Resources
-1. https://martinheinz.dev/blog/6
-2. https://medium.com/@shanemyrick/publishing-to-github-packages-with-gradle-and-github-actions-4ad842634c4e
-3. https://github.com/smyrick/kotlin-extensions/blob/master/.github/workflows/publish-release.yml
-4. https://zoltanaltfatter.com/2019/08/16/dockerizing-spring-boot-apps-with-jib/
-5. https://medium.com/curiosity-driven-development/how-to-dockerize-a-spring-boot-app-with-googles-jib-53dcac56a2e1
-6. .https://docs.spring.io/spring-boot/docs/2.3.x/reference/htmlsingle/#howto-build
-
